@@ -18,5 +18,5 @@ TOOLS="python-lsp-server black"
 
 for pkg in $TOOLS; do
     echo "Installing tool: $pkg"
-    UV_TOOL_BIN_DIR=/usr/local/bin uv tool install "$pkg"
+    UV_LINK_MODE=copy UV_TOOL_BIN_DIR=/usr/local/bin uv tool install "$pkg"
 done
