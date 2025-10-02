@@ -15,9 +15,12 @@ git clone https://github.com/HelloWorldTeraByte/dotfiles.git
 ln -s $_REMOTE_USER_HOME/dotfiles/helix/.config/helix $_REMOTE_USER_HOME/.config/helix
 
 mkdir programs
+
 git clone https://github.com/helix-editor/helix programs/helix
 cd programs/helix
 cargo build --path helix-term --locked
-ln -s $_REMOTE_USER_HOME/programs/helix/target/release/hx $_REMOTE_USER_HOME/.local/bin/
 
+ln -s $_REMOTE_USER_HOME/programs/helix/target/release/hx $_REMOTE_USER_HOME/.local/bin/
 ln -Tsf $PWD/runtime $_REMOTE_USER_HOME/.config/helix/runtime
+
+chown -R $_REMOTE_USER ~/.cache
