@@ -18,5 +18,5 @@ TOOLS="python-lsp-server black"
 
 for pkg in $TOOLS; do
     echo "Installing tool: $pkg"
-    su - $_REMOTE_USER -c "uv tool $pkg"
+    su - $_REMOTE_USER -c "uv tool install $pkg"
 done
