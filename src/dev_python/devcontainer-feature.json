@@ -1,12 +1,11 @@
 {
     "name": "Python Development Enviorment",
-    "id": "dev_py",
-    "version": "0.0.1",
+    "id": "dev_python",
+    "version": "0.0.2",
     "description": "A feature to install python development enviorment",
     "options": {
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils",
-        "ghcr.io/devcontainers/features/rust"
     ]
 }
