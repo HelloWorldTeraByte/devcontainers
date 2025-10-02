@@ -18,7 +18,7 @@ mkdir programs
 
 git clone https://github.com/helix-editor/helix programs/helix
 cd programs/helix
-cargo build --path helix-term --locked
+cargo build --release
 
 ln -s $_REMOTE_USER_HOME/programs/helix/target/release/hx $_REMOTE_USER_HOME/.local/bin/
 ln -Tsf $PWD/runtime $_REMOTE_USER_HOME/.config/helix/runtime
