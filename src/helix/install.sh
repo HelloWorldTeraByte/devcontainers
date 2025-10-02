@@ -3,7 +3,7 @@ set -e
 
 apt-get update && \
     apt-get install -y --no-install-recommends \
-    curl ca-certificates git 
+    curl ca-certificates git tar
     # build-essential pkg-config
 
 # if ! which rustup > /dev/null; then
