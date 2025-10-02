@@ -9,5 +9,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.cache
 
-su - $_REMOTE_USER -c "uv tool install python-lsp-server"
-su - $_REMOTE_USER -c "uv tool install black"
+export UV_TOOL_BIN_DIR="/usr/local/bin"
+uv tool install python-lsp-server
+uv tool install black
