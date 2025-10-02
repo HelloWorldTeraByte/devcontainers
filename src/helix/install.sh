@@ -19,8 +19,8 @@ cd /tmp
 curl https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz
 
 cd /opt
-tar -xf /tmp/helix-23.05-x86_64-linux.tar.xz
-rm  /tmp/helix-23.05-x86_64-linux.tar.xz
+tar -xf /tmp/helix-25.07.1-x86_64-linux.tar.xz
+rm  /tmp/helix-25.07.1-x86_64-linux.tar.xz
 mv helix-25.07.1-x86_64-linux.tar.xz helix
 chmod +x helix/hx
 ln -s /opt/helix/hx /usr/local/bin
