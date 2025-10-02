@@ -10,13 +10,13 @@ if ! which rustup > /dev/null; then
     source $HOME/.cargo/env
 fi
 
-su - luna
-
+cd $_REMOTE_USER_HOME
 git clone https://github.com/HelloWorldTeraByte/dotfiles.git
-ln -s ~/dotfiles/helix/.config/helix ~/.config/helix
+ln -s $_REMOTE_USER_HOME/dotfiles/helix/.config/helix $_REMOTE_USER_HOME/.config/helix
 
-git clone https://github.com/helix-editor/helix
-cd helix
+mkdir programs
+git clone https://github.com/helix-editor/helix programs/helix
+cd programs/helix
 cargo install --path helix-term --locked
 
-ln -Tsf $PWD/runtime ~/.config/helix/runtime
+ln -Tsf $PWD/runtime $_REMOTE_USER_HOME/.config/helix/runtime
