@@ -3,8 +3,8 @@ set -e
 
 apt-get update && \
     apt-get install -y --no-install-recommends \
-    curl ca-certificates
-    # build-essential pkg-config git 
+    curl ca-certificates git 
+    # build-essential pkg-config
 
 # if ! which rustup > /dev/null; then
 #     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
