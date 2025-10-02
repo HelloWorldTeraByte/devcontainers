@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 apt-get update && \
@@ -14,5 +14,4 @@ fi
 
 chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.cache
 
-su - $_REMOTE_USER -c "uv tool install python-lsp-server"
-su - $_REMOTE_USER -c "uv tool install black"
+UV_TOOL_BIN_DIR=/usr/local/bin for pkg in python-lsp-server black; do uv tool install $pkg; done
