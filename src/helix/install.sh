@@ -10,6 +10,8 @@ if ! which rustup > /dev/null; then
     source $HOME/.cargo/env
 fi
 
+su - luna
+
 git clone https://github.com/HelloWorldTeraByte/dotfiles.git
 ln -s ~/dotfiles/helix/.config/helix ~/.config/helix
 
