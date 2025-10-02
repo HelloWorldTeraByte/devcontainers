@@ -1,15 +1,14 @@
 #!/bin/bash
 set -e
 
+apt-get update && \
+    apt-get install -y --no-install-recommends \
+    curl ca-certificates build-essential pkg-config git 
+
 if ! which rustup > /dev/null; then
-    which curl > /dev/null || (apt update && apt install curl -y -qq)
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
     source $HOME/.cargo/env
 fi
-
-dpkg -l | grep build-essential || (apt update && apt install build-essential -y -qq)
-dpkg -l | grep pkg-config || (apt update && apt install pkg-config -y -qq)
-dpkg -l | grep git || (apt update && apt install git -y -qq)
 
 git clone https://github.com/HelloWorldTeraByte/dotfiles.git
 ln -s ~/dotfiles/helix/.config/helix ~/.config/helix
