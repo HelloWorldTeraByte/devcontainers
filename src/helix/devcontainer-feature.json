@@ -1,7 +1,7 @@
 {
     "name": "Helix",
     "id": "helix",
-    "version": "0.0.13",
+    "version": "0.0.14",
     "description": "A feature to install helix",
     "options": {
     },

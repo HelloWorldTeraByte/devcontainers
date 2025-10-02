@@ -16,7 +16,7 @@ git clone https://github.com/HelloWorldTeraByte/dotfiles.git
 ln -s $_REMOTE_USER_HOME/dotfiles/helix/.config/helix $_REMOTE_USER_HOME/.config/helix
 
 cd /tmp
-curl https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz
+curl -LO https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz
 
 cd /opt
 tar -xf /tmp/helix-25.07.1-x86_64-linux.tar.xz
