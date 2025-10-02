@@ -1,7 +1,7 @@
 {
     "name": "Python Development Enviorment",
     "id": "dev_python",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "description": "A feature to install python development enviorment",
     "options": {
     },

@@ -14,11 +14,9 @@ fi
 
 chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.cache
 
-UV_LINK_MODE=copy
-UV_TOOL_BIN_DIR=/usr/local/bin 
 TOOLS="python-lsp-server black"
 
 for pkg in $TOOLS; do
     echo "Installing tool: $pkg"
-    uv tool install "$pkg"
+    su - $_REMOTE_USER -c "uv tool $pkg"
 done
