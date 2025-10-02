@@ -3,7 +3,7 @@ set -e
 
 apt-get update && \
     apt-get install -y --no-install-recommends \
-    curl ca-certificates git tar
+    curl ca-certificates git tar xz-utils
     # build-essential pkg-config
 
 # if ! which rustup > /dev/null; then
@@ -21,7 +21,7 @@ curl -LO https://github.com/helix-editor/helix/releases/download/25.07.1/helix-2
 cd /opt
 tar -xf /tmp/helix-25.07.1-x86_64-linux.tar.xz
 rm  /tmp/helix-25.07.1-x86_64-linux.tar.xz
-mv helix-25.07.1-x86_64-linux.tar.xz helix
+mv helix-25.07.1-x86_64-linux helix
 chmod +x helix/hx
 ln -s /opt/helix/hx /usr/local/bin
 
