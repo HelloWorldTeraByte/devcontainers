@@ -5,7 +5,7 @@ apt-get update && \
     apt-get install -y --no-install-recommends \
     curl ca-certificates
 
-su - $_REMOTE_USER -c "curl -LsSf https://astral.sh/uv/install.sh | sh"
+curl -LsSf https://astral.sh/uv/install.sh | env UV_INSTALL_DIR="/usr/local/bin" sh
 
 chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.cache
 
