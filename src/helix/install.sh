@@ -18,9 +18,10 @@ mkdir programs
 
 git clone https://github.com/helix-editor/helix programs/helix
 cd programs/helix
+git checkout 25.07.1
 cargo build --release
 
 ln -s $_REMOTE_USER_HOME/programs/helix/target/release/hx $_REMOTE_USER_HOME/.local/bin/
 ln -Tsf $PWD/runtime $_REMOTE_USER_HOME/.config/helix/runtime
 
-chown -R $_REMOTE_USER ~/.cache
+chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.cache
