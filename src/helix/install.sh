@@ -17,6 +17,7 @@ ln -s $_REMOTE_USER_HOME/dotfiles/helix/.config/helix $_REMOTE_USER_HOME/.config
 mkdir programs
 git clone https://github.com/helix-editor/helix programs/helix
 cd programs/helix
-cargo install --path helix-term --locked
+cargo build --path helix-term --locked
+ln -s $_REMOTE_USER_HOME/programs/helix/target/release/hx $_REMOTE_USER_HOME/.local/bin/
 
 ln -Tsf $PWD/runtime $_REMOTE_USER_HOME/.config/helix/runtime
