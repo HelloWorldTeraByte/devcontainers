@@ -40,4 +40,6 @@ ln -s /opt/helix/hx /usr/local/bin
 
 ln -Tsf /opt/helix/runtime $_REMOTE_USER_HOME/.config/helix/runtime
 
-chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.cache
+if [ -d "$_REMOTE_USER_HOME/.cache" ]; then
+    chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.cache
+fi

@@ -12,7 +12,9 @@ else
     echo "uv is already installed. Skipping installation."
 fi
 
-chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.cache
+if [ -d "$_REMOTE_USER_HOME/.cache" ]; then
+    chown -R $_REMOTE_USER $_REMOTE_USER_HOME/.cache
+fi
 
 TOOLS="python-lsp-server black"
 
