@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -e
 
-npm install -g typescript-language-server typescript
+npm install -g typescript-language-server typescript @tailwindcss/language-server
