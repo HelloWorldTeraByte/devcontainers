@@ -1,0 +1,11 @@
+{
+    "name": "Typescript Development Environment",
+    "id": "dev_typescript",
+    "version": "0.0.1",
+    "description": "A feature to install typescript development environment",
+    "options": {
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+    ]
+}
