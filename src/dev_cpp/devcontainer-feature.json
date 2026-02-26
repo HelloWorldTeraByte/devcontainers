@@ -1,0 +1,11 @@
+{
+    "name": "C/C++ Development Environment",
+    "id": "dev_cpp",
+    "version": "0.0.1",
+    "description": "A feature to install c/c++ development environment",
+    "options": {
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+    ]
+}
