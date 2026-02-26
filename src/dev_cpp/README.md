@@ -1,13 +1,13 @@
 
-# Python Development Enviorment (dev_python)
+# C/C++ Development Environment (dev_cpp)
 
-A feature to install python development enviorment
+A feature to install c/c++ development environment
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/HelloWorldTeraByte/devcontainers/dev_python:0": {}
+    "ghcr.io/HelloWorldTeraByte/devcontainers/dev_cpp:0": {}
 }
 ```
 
@@ -21,4 +21,4 @@ A feature to install python development enviorment
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/HelloWorldTeraByte/devcontainers/blob/main/src/dev_python/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/HelloWorldTeraByte/devcontainers/blob/main/src/dev_cpp/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
